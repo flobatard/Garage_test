@@ -1,0 +1,31 @@
+metadata_dir = "/tmp/meta"
+data_dir = "/tmp/data"
+db_engine = "sqlite"
+
+replication_factor = 1
+
+rpc_bind_addr = "[::]:3901"
+rpc_public_addr = "127.0.0.1:3901"
+rpc_secret = "de3f7fab5dbf9bc22ce606c02e10da1143b212dd03ab19b702ef4c6f604506ca"
+
+[s3_api]
+s3_region = "garage"
+api_bind_addr = "[::]:3900"
+root_domain = "localhost"
+
+[s3_web]
+bind_addr = "[::]:3902"
+root_domain = "localhost"
+index = "index.html"
+
+[k2v_api]
+api_bind_addr = "[::]:3904"
+
+[cluster]
+self_addr = "http://127.0.0.1:3903"
+peers = ["http://127.0.0.1:3911"]
+
+[admin]
+api_bind_addr = "[::]:3903"
+admin_token = "U/7Jdm7CfGceNShHTsxKbP9v8WGcRIXNGfpB5Ps2Whg="
+metrics_token = "KotwngWXSVuor/HtDLPUvAaGiElNCjDICUY0LUlegxY="
